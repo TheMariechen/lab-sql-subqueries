@@ -68,6 +68,7 @@ use sakila;
 					from (select customer_id, sum(amount) as total_spent # here child from above inserted 
 							from payment
 							group by customer_id) as ts);
+
     
     
     
